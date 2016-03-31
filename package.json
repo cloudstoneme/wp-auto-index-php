@@ -1,0 +1,17 @@
+{
+  "name": "wp-auto-index-php",
+  "version": "1.0.1",
+  "description": "Automatically create index.php files with \"Silence is golen!\" comment in all directories to prevent WordPress directories from listing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cloud Stone <cloudstone.me@gmail.com> (http://cloudstone.me)",
+  "license": "MIT",
+  "bin": {
+    "wp-auto-index-php": "index.js"
+  },
+  "keywords": [
+    "wordpress, wp"
+  ]
+}
