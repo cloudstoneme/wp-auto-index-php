@@ -17,5 +17,8 @@
   },
   "keywords": [
     "wordpress, wp"
-  ]
+  ],
+  "devDependencies": {
+    "commander": "^2.9.0"
+  }
 }
