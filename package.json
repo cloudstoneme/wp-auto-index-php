@@ -1,6 +1,6 @@
 {
   "name": "wp-auto-index-php",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A command line that create index.php files with *Silence is golen!* comment in all directories to prevent WordPress project directories from listing.",
   "main": "index.js",
   "scripts": {
