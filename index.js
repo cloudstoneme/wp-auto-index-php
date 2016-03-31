@@ -29,9 +29,6 @@ function createFile(dir) {
 }
 
 function walk(dir) {
-	if(program.root)
-		createFile(dir);
-
 	fs.readdirSync(dir).filter(function (f) {
 		return f && f[0] != '.'; // Ignore hidden files
 	})
@@ -46,4 +43,6 @@ function walk(dir) {
 	});
 }
 
+if(program.root)
+	createFile(dir);
 walk('.');
