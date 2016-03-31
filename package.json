@@ -1,10 +1,14 @@
 {
   "name": "wp-auto-index-php",
   "version": "1.0.1",
-  "description": "Automatically create index.php files with `Silence is golen!` comment in all directories to prevent WordPress directories from listing.",
+  "description": "A command line that create index.php files with *Silence is golen!* comment in all directories to prevent WordPress project directories from listing.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudstoneme/wp-auto-index-php"
   },
   "author": "Cloud Stone <cloudstone.me@gmail.com> (http://cloudstone.me)",
   "license": "MIT",
