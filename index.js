@@ -5,7 +5,6 @@ var path = require('path');
 var program = require('commander') // Parse command line options
 var pkg = require( path.join(__dirname, 'package.json') );
 
-
 program
 	.version(pkg.version)
 	.option('-f, --force', 'Create new file whatever the file is exists.')
