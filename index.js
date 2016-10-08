@@ -16,11 +16,11 @@ var force = program.force || false;
 function createFile(dir) {
 	var file = dir+'/index.php';
 
-	fs.exists(file, (exists) => {
-		if(exists && !force) {
+	fs.stat(file, function(err, stat) {
+		if(err == null && !force) {
 			console.log('Exists: '+dir+'/index.php');
 		} else {
-			fs.writeFile(file, "<?php\n//Silence is golden!", (err) => {
+			fs.writeFile(file, "<?php\n//Silence is golden!", function(err, writeFile) {
 				if (err) throw err;
 				console.log('Created: '+dir+'/index.php');
 			});
@@ -44,5 +44,5 @@ function walk(dir) {
 }
 
 if(program.root)
-	createFile(dir);
+	createFile('.');
 walk('.');
